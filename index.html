@@ -4,16 +4,11 @@
     <meta charset="utf-8">
     <title>Глейси</title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet"> -->
-    <style>
-    	body {
-    		background-color: lightgreen;
-    	}
-    </style>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 	<header class="main-header">
-		<img class="logo" src="img/logo.png" alt="Логотип">
+		<img class="logo" src="img/logo.svg" alt="Логотип Глейси">
 		<ul class="main-menu">
 			<li>
 				<a href="#">Каталог</a>
@@ -31,12 +26,12 @@
 		<ul class="add-menu">
 			<li class="search">
 				<form method="get" action="#">
-					<input type="text" name="search" placeholder="Что ищем?">
+					<input type="search" name="search" placeholder="Что ищем?">
 				</form>
 			</li>
 			<li class="let-me-in">Вход
 				<form method="get" action="#">
-					<input type="text" name="mail" placeholder="Электронная почта">
+					<input type="email" name="email" placeholder="Электронная почта">
 					<input type="password" name="password" placeholder="Пароль">
 					<button type="submit">Войти</button>
 					<p>
@@ -69,28 +64,28 @@
 	<section class="hits">
 		<ul>
 			<li class="catalog-item hit">
-				<img src="#" alt="">
+				<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
 				<div class="describtion">
 					<p class="price">310/кг</p>
 					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 				</div>
 			</li>
 			<li class="catalog-item hit">
-				<img src="#" alt="">
+				<img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
 				<div class="describtion">
 					<p class="price">380/кг</p>
 					<p>Сливочно-кофейное с кусочками шоколада</p>
 				</div>
 			</li>
 			<li class="catalog-item hit">
-				<img src="#" alt="">
+				<img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
 				<div class="describtion">
 					<p class="price">355/кг</p>
 					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
 				</div>
 			</li>
 			<li class="catalog-item hit">
-				<img src="#" alt="">
+				<img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
 				<div class="describtion">
 					<p class="price">415/кг</p>
 					<p>Сливочное крем-брюле с карамельной подливкой</p>
@@ -124,6 +119,7 @@
 	</section>
 
 	<section class="map">
+		<img src="img/map.jpg" alt="Адрес главного офиса Большая Конюшенная 19/8" width="900" height="430">
 		<div class="contacts">
 			<p class="address">Адрес главного офиса
 			и офлайн-магазина:
@@ -132,22 +128,38 @@
 			<p class="tel">Для заказов по телефону:
 			<span>8 812 450-25-25
 			(с 10 до 20 ежедневно) </span></p>
-			<button class="modal-fedback" type="submit">Форма обратной связи</button>
+			<button class="modal-fedback" type="button">Форма обратной связи</button>
 		</div>
 	</section>
 
 	<footer>
 		<ul class="social">
-			<li class="social-tw"></li>
-			<li class="social-inst"></li>
-			<li class="social-fb"></li>
-			<li class="social-vk"></li>
+			<li class="social-tw">
+				<a href="#">
+					<img src="img/twitter.svg" alt="твиттер" width="33" height="33">
+				</a>
+			</li>
+			<li class="social-inst">
+				<a href="#">
+					<img src="img/instagram.svg" alt="инстаграм" width="33" height="33">
+				</a>
+			</li>
+			<li class="social-fb">
+				<a href="#">
+					<img src="img/fb.svg" alt="фейсбук" width="33" height="33">
+				</a>
+			</li>
+			<li class="social-vk">
+				<a href="#">
+					<img src="img/vk.svg" alt="вконтакт" width="33" height="33">
+				</a>
+			</li>
 		</ul>
 		<ul class="footer-info">
-			<li><b>Для поставщиков</b></li>
-			<li>О производстве</li>
-			<li>Наши документы</li>
-			<li>Экологические стандарты</li>
+			<li><a href="#"><b>Для поставщиков</b></a></li>
+			<li><a href="#">О производстве</a></li>
+			<li><a href="#">Наши документы</a></li>
+			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
 		<div class="copyright">
 			<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2017</a>
@@ -155,12 +167,13 @@
 	</footer>
 
 	<section class="modal">
-		<p>Мы обязательно вам ответим!<span class="close">X</span></p>
+		<p>Мы обязательно вам ответим!</p>
 		<form method="get" action="#">
 			<input type="text" name="name" placeholder="Как вас зовут?">
 			<input type="text" name="mail" placeholder="Ваша почта для ответа?">
 			<textarea name="comment" cols="10" rows="10" placeholder="Напишите что-нибудь..."></textarea>
 			<button type="submit">Отправить</button>
+			<button type="button" class="close-modal"><img src="" alt="Закрыть форму"></button>
 		</form>
 	</section>
   </body>
