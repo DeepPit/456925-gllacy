@@ -1,0 +1,732 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ 	box-sizing: inherit;
+ }
+
+ul, li, h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, Arial, sans-serif;
+	font-style: normal;
+	color: #ffffff;
+	background-color: #849d8f;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
+
+a:active {
+	text-decoration: none;
+	color: #e84d37;
+	border-bottom: 1px solid #e84d37;
+}
+
+.btn {
+	padding: 0 20px;
+	border: none;
+	border-radius: 25px;
+	font-family: Roboto, Arial, sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient( to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+
+.btn:hover {
+ 	background-image: linear-gradient( 90deg, #f58669, #ec6f5e);
+}
+
+.btn:active {
+	box-shadow: 0px -2px 2px 0px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient( to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+
+.buy-btn {
+	display: block;
+	margin: 0 auto;
+	font-size: 32px;
+	line-height: 64px;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+	border-radius: 35px;
+	padding: 0 40px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	width: 700px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 31px;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.main-header {
+	margin-bottom: 270px;
+}
+
+.main-header p {
+	width: 180px;
+	margin-left: auto;
+	text-align: right;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+.header-tel {
+	font-size: 22px;
+	line-height: 33px;
+}
+
+.menu-wrap {
+	display: flex;
+	align-items: flex-start;
+}
+
+.logo {
+	margin-right: 23px;
+}
+
+.main-menu {
+	display: flex;
+	margin-right: auto;
+	font-weight: 700;
+}
+
+.main-menu > li {
+	margin-right: 10px;
+}
+
+.main-menu > li:active {
+	background-color: red;
+}
+
+.catalog > a {
+	line-height: 32px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.delivery > a {
+	line-height: 32px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.about-company > a {
+	line-height: 32px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.catalog > a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sub-menu a,
+a.logo,
+.social a {
+	border: none;
+	font-weight: 400;
+}
+
+.sub-menu .new-items {
+	font-weight: 700;
+}
+
+.sub-menu {
+	display: none;
+	background-color: #f8f7f4;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.sub-menu a {
+	display: block;
+	padding: 10px 20px;
+	color: #323232;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.sub-menu a:hover {
+	background-color: #fbded7;
+}
+
+.sub-menu a:active {
+	background-color: #f6b5a5;
+}
+
+.sub-menu .curent {
+	background-color: #d07058;
+}
+
+.catalog:hover .sub-menu {
+	display: block;
+	position: absolute;
+}
+
+.add-menu {
+	display: flex;
+	padding-top: 14px;
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+.add-menu > li {
+	margin-left: 10px;
+}
+
+.search {
+	width: 32px;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-image: url(../img/loupe.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-radius: 50%;
+}
+
+.search form {
+	display: none;
+}
+
+.let-me-in {
+	width: 92px;
+	padding-left: 45px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	background-image: url(../img/entrance.svg);
+	background-repeat: no-repeat;
+	background-position: 16px 50%;
+}
+
+.let-me-in form{
+	display: none;
+}
+
+.let-me-in a,
+.let-me-in a:visited {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+	color: #323232;
+	border-bottom: 1px solid #323232;
+}
+
+.let-me-in a:hover {
+	text-decoration: none;
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
+
+.let-me-in a:active {
+	text-decoration: none;
+	color: #e84d37;
+	border-bottom: 1px solid #e84d37;
+}
+
+.bin {
+	width: 117px;
+	padding-left: 45px;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-image: url(../img/basket.svg);
+	background-repeat: no-repeat;
+	background-position: 16px 50%;
+	border-radius: 20px;
+}
+
+/*<<<================     SECTION CATALOG    ===============>>>*/
+
+.add-menu-wrap {
+	display: flex;
+}
+
+.breadcrumbs {
+	display: flex;
+}
+
+.basket {
+	display: none;
+}
+/*<<<================     SECTION     ===============>>>*/
+
+.gifts {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.gift-item-1,
+.gift-item-2 {
+	width: 560px;
+	height: 229px;
+	border-radius: 15px;
+	padding: 16px 20px 0 18px;
+	vertical-align: center;
+}
+
+.gift-item-1 .btn,
+.gift-item-2 .btn {
+	display: block;
+	margin-left: auto;
+}
+
+.gift-item-1 {
+	background-color: #990033;
+	background-image: url("../img/raspberries-gift-bg.jpg");
+}
+
+.gift-item-2 {
+	background-color: #663300;
+	background-image: url("../img/shocolate-gift-bg.jpg");
+}
+
+.gifts p {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 44px;
+}
+
+.gifts h3 {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 41px;
+	margin-bottom: 15px;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.hits {
+	margin-bottom: 40px;
+}
+
+.hit {
+	position: relative;
+}
+
+.hit-label {
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+
+.hits ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	width: 267px;
+}
+
+.describtion .price {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+.describtion p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	text-align: center;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.promo {
+	background-color: #ffcc99;
+	background-image: url(../img/promo-bg.jpg);
+	backgorund-repeat: no-repeat;
+	color: #323232;
+	border-radius: 15px;
+	padding: 25px 20px 15px 20px;
+	margin-bottom: 40px;
+}
+
+.promo ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.promo h1 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.seo-list-item {
+	width: 540px;
+	padding-left: 57px;
+	padding-top: 13px;
+	padding-bottom: 9px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.seo-list-item:nth-child(1) {
+	background-image: url("../img/ice-cream.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.seo-list-item:nth-child(2) {
+	background-image: url("../img/cow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.seo-list-item:nth-child(3) {
+	background-image: url("../img/eco.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.seo-list-item:nth-child(4) {
+	background-image: url("../img/thermometer.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.blog {
+	display: flex;
+	justify-content: space-between;
+	height: 220px;
+}
+
+.blog-news {
+	width: 560px;
+	padding: 23px 20px;
+	padding-right: 250px;
+	border-radius: 15px;
+	background-color: #ffffff;
+	background-image: url("../img/strawberry-seo-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.blog-news h3 {
+	padding: 0;
+	margin-bottom: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #323232;
+}
+
+.blog-news p {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	text-decoration: underline;
+	color: #323232;
+}
+
+.mail-wrap {
+	width: 560px;
+	border-radius: 15px;
+	background-color: #ffffff;
+	background-image: url("../img/bg-post.svg");
+	background-repeat: no-repeat;
+	padding: 5px;
+}
+
+.mail-send {
+	height: 100%;
+	padding: 29px 21px;
+	background-color: #f8f7f4;
+	border-radius: 12px;
+}
+
+.mail-send p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #5a5a5a;
+	margin-bottom: 35px;
+}
+
+.mail-send input[type="text"] {
+	border-radius: 4px;
+	padding: 11px 0 11px 15px; 
+	width: 368px;
+	border: 1px solid #999999;
+	font-family: Roboto, Arial, sans-serif;
+	color: #999999;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.map-wrap {
+	width: 100%;
+	min-width: 1200px;
+	position: relative;
+}
+
+.map-wrap img {
+	min-width: 1200px;
+	width: 100%;
+}
+
+.map {
+	color: #323232;
+}
+
+.contacts-container {
+	position: relative;
+}
+
+.contacts {
+	position: absolute;
+	top: 102px;
+	right: 0;
+	z-index: 99;
+	width: 302px;
+	height: 306px;
+	padding: 28px 25px;
+	border-radius: 15px;
+	color: #323232;
+	background-color: #fff;
+}
+
+.address {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	margin-bottom: 19px;
+}
+
+.address span {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.tel {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+.tel-number {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.time {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social {
+	display: flex;
+}
+
+.footer-info {
+	display: flex;
+}
+
+.footer-info a {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.copyright {
+	font-size: 12px;
+}
+
+/*<<<================     SECTION     ===============>>>*/
+
+.modal {
+	display: none;
+}
+
+.modal p {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #323232;
+}
+
+/*<<<================     CATALOG     ===============>>>*/
+
+.basket {
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+}
+
+.basket span {
+	color: #999999;
+}
+
+.total-price {
+	font-size: 15px;
+	line-height: 18px;
+	color: #323232;
+	font-weight: 700;
+}
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+
+h1 {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 41px;
+}
+
+/*<====================== Разметка слайдера =========================>*/
+
+
+
+
+/*Использовал отдельный контейнер, чтобы расположить его на одном уровне с радиокнопками в дереве тегов, иначе я не знаю как составить селектор (я так понимаю узел к которому пременяется селектор должен бить на одном уровне или ниже в дереве тегов)? Повесил на него все значения главного фона страницы. Задал минимальную ширину чтоб небыло проблемм с полупустым окном при горизонтальном скроле*/
+
+.background-slider {
+	padding-top: 9px;
+	background-color: #849d8f;
+	background-image: url("../img/raspberries-bg.png");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	min-width: 1200px;
+	padding-bottom: 40px;
+}
+
+
+/*Центровщик содержимого страницы, значения для примера, не окончательные*/
+
+.main-container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+/*Контейнер для лейблов, пришлось разнести отдельно от радиокнопок в HTML иначе не получалось спозиционировать.*/
+
+.controls {
+	position: absolute;
+	top: 555px;
+	left: 27px;
+}
+
+/*Спрятал радиокнопки*/
+
+input[name="point"] {
+	display: none;
+}
+
+/*Оформление переключателей на странице в различных состояних, к макету подгонял приблизительно.*/
+
+.controls label {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	height: 21px;
+	width: 21px;
+	margin-right: 5px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.controls label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#slide1:checked ~ .background-slider .main-container .controls label:nth-of-type(1),
+#slide2:checked ~ .background-slider .main-container .controls label:nth-of-type(2),
+#slide3:checked ~ .background-slider .main-container .controls label:nth-of-type(3) {
+	background-color: #fff;
+}
+
+/*Собственно смена фонового изображения и цвета. Реализовано через переназначения изображения. Наверно лучше бы сделать через Z-index/ opacity или как-нибудь еще - чтоб все изображения были уже загружены до смены фона?*/
+
+#slide1:checked ~ .background-slider {
+	background-color: #849d8f;
+	background-image: url("../img/raspberries-bg.png");
+	transition: all 200ms;
+}
+
+#slide2:checked ~ .background-slider {
+	background-color: #8996a6;
+	background-image: url("../img/shocolate-bg.png");
+	transition: all 200ms;
+}
+
+#slide3:checked ~ .background-slider {
+	background-color: #9d8b84;
+	background-image: url("../img/strawberry-bg.png");
+	transition: all 200ms;
+}
+
+#slide1:checked ~ .background-slider-add {
+	background-color: #849d8f;
+	transition: all 200ms;
+}
+
+#slide2:checked ~ .background-slider-add {
+	background-color: #8996a6;
+	transition: all 200ms;
+}
+
+#slide3:checked ~ .background-slider-add {
+	background-color: #9d8b84;
+	transition: all 200ms;
+}
+
+/*<====================== Извращения над блоком с картой =========================>*/
